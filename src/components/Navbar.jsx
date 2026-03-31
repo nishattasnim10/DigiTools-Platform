@@ -4,7 +4,7 @@ import shoppingCart from '../../src/assets/products/shopping-cart.png'
 const Navbar = () => {
     return (
         <div className="bg-base-100 shadow-sm"> 
-            <div className="navbar font-manrope container mx-auto px-4 md:px-10 lg:px-20">
+            <div className="navbar font-manrope container mx-auto px-4 md:px-20 lg:px-30">
 
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -21,7 +21,7 @@ const Navbar = () => {
                             <li><a>FAQ</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-2xl font-bold  bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
+                    <a className="btn btn-ghost text-3xl font-extrabold  bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">DigiTools</a>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
