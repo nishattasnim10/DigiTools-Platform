@@ -1,13 +1,13 @@
-
+import Navbar from './components/Navbar';
 
 function App() {
   
 
   return (
     <>
-      <div><p className="text-4xl text-lime-400 ">hiiii</p></div>
+      <Navbar />
     </>
-  )
+  );
 }
 
 export default App
