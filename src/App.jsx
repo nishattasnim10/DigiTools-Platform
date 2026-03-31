@@ -32,7 +32,7 @@ function App() {
         
         />
 
-        <input type="radio" name="my_tabs_1" className="tab rounded-full w-40 py-5" aria-label="Cart" 
+        <input type="radio" name="my_tabs_1" className="tab rounded-full w-40 py-5" aria-label={`Cart (${carts.length})`}
            onClick={()=> setActiveTab("Cart")} 
           
         />

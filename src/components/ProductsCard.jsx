@@ -1,11 +1,22 @@
 import React from "react";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const ProductsCard = ({model, carts, setCarts}) => {
     const [isBuy, setIsBuy] = useState(false)
+
     const handleBuy = () => {
         setIsBuy(true)
+
+        // check item is already in cart or not
+        const isFound = carts.some((cartItem) => cartItem.id === model.id);
+        if (isFound) {
+            toast.error("Item already in Cart!");
+            return;
+        }
+
         setCarts([...carts, model])
+        toast.success("Added to Cart!")
     }
     return (
         <div key={model.id} className="relative bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex flex-col justify-between">

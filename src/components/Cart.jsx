@@ -1,16 +1,19 @@
 import React from "react";
+import { toast } from "react-toastify";
 const Cart = ({carts, setCarts}) => {
     
     const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
     //  console.log(totalPrice)
     const handlepayment = () => {
         setCarts([]);
+        toast.success("Payment successful!")
     };
     //  remove each item from cart
     const handleRemove = (item) => {
         const filtterdArray = carts.filter((cartItem) => cartItem.id !== item.id);
         setCarts(filtterdArray);
-        console.log(filtterdArray);
+        // console.log(filtterdArray);
+        toast.success("Item removed from Cart!");
     }
     return (
       <div className="w-9/12 mx-auto border border-gray-100 rounded-2xl p-5 shadow-sm">  
