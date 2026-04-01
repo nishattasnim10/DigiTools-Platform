@@ -5,7 +5,9 @@ import Banner from './components/Banner';
 import Stats from './components/Stats';
 import Models from './components/Models';
 import Cart from './components/Cart';
-// import Tab from './components/Tab';
+import Steps from "./components/Steps"; 
+import Pricing from "./components/Pricing";
+import Footer from "./components/Footer";
 
 const getModels = async () => {
   const response = await fetch("./models.json")
@@ -40,6 +42,10 @@ function App() {
       </div>
       {activeTab === "model" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts} />}
       {activeTab === "Cart" && <Cart carts={carts} setCarts={setCarts}  />}
+
+      <Steps />
+      <Pricing />
+      <Footer />
     </>
   );
 }
