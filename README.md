@@ -1,4 +1,4 @@
-# DigiTools-PlatForm - My Project
+# DigiTools-PlatForm 
 
 It is a website where one can easily find many digital tools and designs. It is made to help people work faster and better.
 
@@ -10,7 +10,7 @@ It is a simple platform for digital products. It has a clean look, a smooth menu
 
 ---
 
-## Technology that I Used
+## Technologies that I Used
 
 * **React.js**
 * **Tailwind CSS**
