@@ -1,12 +1,26 @@
-# React + Vite
+# DigiTools-PlatForm - My Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a website where one can easily find many digital tools and designs. It is made to help people work faster and better.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About This Project
 
-## Expanding the ESLint configuration
+It is a simple platform for digital products. It has a clean look, a smooth menu, and a cart system. I built this to make sure users can easily find what they need without any confusion.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technology that I Used
+
+* **React.js**
+* **Tailwind CSS**
+* **DaisyUI**
+* **JavaScript**
+
+---
+
+## 3 Main Features
+
+1. **Easy Cart Management:** Users can add products to their cart with one click. If they change their mind, they can also remove items easily from the cart list.
+2. **Price Calculation:** The website automatically calculates the total price of all items in the cart. This helps users to see exactly how much they need to pay in real-time.
+3. **Interactive UI with Toastify:** When a user adds or removes a product, a 'Toastify' notification pops up instantly. Also, the menu tabs change their background color with a beautiful gradient effect when clicked.
