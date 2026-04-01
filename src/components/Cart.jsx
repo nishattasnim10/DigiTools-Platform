@@ -1,5 +1,7 @@
 import React from "react";
 import { toast } from "react-toastify";
+import shp from "../assets/shp.jpg"
+
 const Cart = ({carts, setCarts}) => {
     
     const totalPrice = carts.reduce((sum, item) => sum + item.price, 0);
@@ -16,13 +18,22 @@ const Cart = ({carts, setCarts}) => {
         toast.success("Item removed from Cart!");
     }
     return (
-      <div className="w-9/12 mx-auto border border-gray-100 rounded-2xl p-5 shadow-sm">  
-        <div className=" p-10 max-w-7xl mx-auto">
+     
+      <div className="w-9/12 mx-auto bg-gray-50 border border-gray-100 rounded-2xl p-5 shadow-sm mt-10">  
+        <div className=" p-10 max-w-7xl mx-auto ">
             <h1 className="text-2xl font-bold mb-5">Your Cart</h1>
             {/* check if card is empty or not */}
             {
                carts.length === 0 
-               ? <p>Empty</p> 
+               ? <>
+                            <div className="container w-9/12 mx-auto text-center px-6 lg:px-20 py-10 mt-7 ">
+                                <img src={shp} alt="shopping cart" className="w-20 h-20 object-contain mx-auto mb-5 rounded-full" />
+
+                                <p className="font-bold text-sm text-gray-400">Your cart is empty</p> 
+
+                   </div>
+                         
+                 </>
                : <>
                             <div className="space-y-4">
                                 {
@@ -74,6 +85,7 @@ const Cart = ({carts, setCarts}) => {
                 
         
         </div>
+        
     
     );
 }

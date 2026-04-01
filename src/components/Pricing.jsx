@@ -5,7 +5,7 @@ const Pricing = () => {
         <div className="bg-white pb-25 ">
             {/* heading & subheading */}
             <div className="w-8/12 mx-auto items-center text-center py-16 ">
-                <h1 className="mt-7 text-4xl font-extrabold text-[#101727]">Simple, Transparent Pricing</h1>
+                <h1 className="mt-8 text-4xl font-extrabold text-[#101727]">Simple, Transparent Pricing</h1>
                 <p className="text-[#627382] mt-4 text-sm">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
 
             </div>

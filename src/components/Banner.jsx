@@ -5,11 +5,13 @@ import bannerImg from '../../src/assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className="w-[90%] lg:w-9/12 mx-auto gap-10 lg:gap-15 flex flex-col-reverse lg:flex-row items-center py-10 lg:py-20">
+        <div className="w-[90%] lg:w-9/12 mx-auto gap-10 lg:gap-15 flex flex-col-reverse lg:flex-row items-center py-10 lg:py-15">
             <div className="w-full lg:w-1/2 text-center lg:text-left mt-10 lg:mt-0 ">
 
             {/* Badge */}
-                <span className="text-purple-500 text-xs md:text-sm font-medium bg-[#E1E7FF] inline-flex items-center gap-2 px-3 py-1.5 rounded-full w-max mx-auto lg:mx-0"><img src={badgeCircle} alt="Badge" className="h-3 w-3" />New: AI-Powered Tools Available</span>
+                <span className="text-purple-500 text-xs md:text-sm font-medium bg-[#E1E7FF] inline-flex items-center gap-2 px-3 py-1.5 rounded-full w-max mx-auto lg:mx-0">
+                    <img src={badgeCircle} alt="Badge" className="h-3 w-3" />New: AI-Powered Tools Available
+                </span>
 
             {/* Headline */}
                 <p className="text-6xl font-extrabold mt-4 leading-16 ">Supercharge Your<br />Digital Workflow</p>
